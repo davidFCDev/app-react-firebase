@@ -34,7 +34,7 @@ const Header = () => {
                     user 
                     ? 
                     <div className='flex gap-2 w-12 justify-end'>
-                        <p className='p-1 text-gray-100 italic text-slate-700 mt-1'>{user.email}</p>
+                        <p className='p-1 text-gray-100 italic mt-1'>{user.email}</p>
                         {/* <button className='bg-gray-600 text-white py-2 px-4 rounded-lg shadow-sm shadow-zinc-400 hover:bg-gray-500 transition'>
                             <RiShoppingCart2Fill className='text-xl text-g'/>
                         </button> */}

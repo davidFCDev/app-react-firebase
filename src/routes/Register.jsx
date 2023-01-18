@@ -36,12 +36,24 @@ const Register = () => {
 
     return (
         <div className='flex flex-col gap-4 items-center mt-10'>
-            <h1 className='text-xl font-bold text-gray-800 text center'>Registro</h1>
-            <p className='text-sm'>Crea tu usuario</p>
+            <h1 className='text-xl font-bold text-gray-800 text center'>Register</h1>
+            <p className='text-sm italic'>Create a new user!</p>
             <form onSubmit={handleSubmit} className='flex flex-col gap-2 max-w-sm'>
-                <input className='border bg-slate-100 border-gray-300 rounded py-1 px-2 outline-none' type='email' value={email} onChange={e => setEmail(e.target.value)} />
-                <input className='border bg-slate-100 border-gray-300 rounded py-1 px-2 outline-none' type='password' value={password} onChange={e => setPassword(e.target.value)} />
-                <button className='bg-emerald-200 py-1 text-gray-600 font-semibold hover: hover:bg-emerald-300 rounded shadow-slate-300 shadow-sm'>Enviar</button>
+                <input 
+                    className='border bg-slate-100 border-gray-300 rounded py-1 px-2 outline-none'
+                    type='email'
+                    value={email}
+                    onChange={e => setEmail(e.target.value)} 
+                    placeholder='User'
+                    />
+                <input 
+                    className='border bg-slate-100 border-gray-300 rounded py-1 px-2 outline-none'
+                    type='password'
+                    value={password}
+                    onChange={e => setPassword(e.target.value)} 
+                    placeholder='Password'
+                    />
+                <button className='bg-red-600 py-1 text-white font-semibold hover: hover:bg-red-700 rounded shadow-slate-300 shadow-sm'>Send</button>
             </form>
         </div>
     );

@@ -6,7 +6,6 @@ import { toast } from 'react-hot-toast';
 import { RiLogoutCircleRLine, RiUserFill } from 'react-icons/ri';
 import { BsListTask } from 'react-icons/bs';
 
-
 const auth = getAuth();
 
 const Header = () => {
@@ -24,34 +23,31 @@ const Header = () => {
     }
     
     return (
-        <header className='h-16 w-full bg-gray-500 shadow-lg shadow-gray-500 flex items-center justify-between px-8 fixed top-0'>
+        <header className='h-16 w-full bg-zinc-200 shadow-lg shadow-zinc-300 flex items-center justify-between px-8 fixed top-0'>
             <div className='flex items-center gap-2 cursor-pointer' onClick={() => setRoute("home")}>
-                <GiDiceFire className='text-2xl text-emerald-400'/>
-                <span className='text-xl font-semibold text-white'>FireShopping</span>
+                <GiDiceFire className='text-3xl text-red-600'/>
+                <p className='text-2xl font-bold text-red-600'>Fire<span className='text-black'>Shopping</span></p>
             </div>
             <div className='flex gap-2'>
                 {
                     user 
                     ? 
                     <div className='flex gap-2 w-12 justify-end'>
-                        <p className='p-1 text-gray-100 italic mt-1'>{user.email}</p>
-                        {/* <button className='bg-gray-600 text-white py-2 px-4 rounded-lg shadow-sm shadow-zinc-400 hover:bg-gray-500 transition'>
-                            <RiShoppingCart2Fill className='text-xl text-g'/>
-                        </button> */}
-                        <button className='bg-gray-500 text-white font-semibold py-2 px-4 rounded-md  hover:bg-gray-400 transition'>
-                            <BsListTask 
-                                className='text-xl'
-                                onClick={() => setRoute('tasklist')}
-                                />
-                        </button>
-                        <button className='bg-gray-500 text-white font-semibold py-2 px-4 rounded-md  hover:bg-gray-400 transition'>
-                            <RiUserFill 
-                                className='text-xl'
-                                onClick={() => setRoute('perfil')}
-                                />
+                        <p className='p-1 text-slate-900 italic mt-1'>{user.email}</p>
+                        <button 
+                            className='bg-zinc-200 text-slate-900 font-semibold py-2 px-4 rounded-md border border-slate-900 hover:bg-slate-900 hover:text-white transition'
+                            onClick={() => setRoute('perfil')}
+                        >
+                            <RiUserFill className='text-xl'/>
                         </button>
                         <button 
-                            className='bg-gray-500 text-white font-semibold py-2 px-4 rounded-full  hover:bg-gray-400 transition'
+                            className='bg-zinc-200 text-slate-900 font-semibold py-2 px-4 rounded-md border border-slate-900 hover:bg-slate-900 hover:text-white transition'
+                            onClick={() => setRoute('tasklist')}
+                        >
+                            <BsListTask className='text-xl'/>
+                        </button>
+                        <button 
+                            className='bg-zinc-200 text-slate-900 font-semibold py-2 px-4 rounded-full hover:bg-red-600 transition'
                             onClick={hazLogout}
                             >
                             <RiLogoutCircleRLine className='text-2xl'/>
@@ -60,13 +56,13 @@ const Header = () => {
                     : 
                     (
                         <><button 
-                            className='bg-gray-500 text-white font-semibold py-2 px-4 rounded-md  hover:bg-gray-400 transition'
+                            className='bg-zinc-200 text-slate-900 border border-slate-900 font-semibold py-2 px-4 rounded-md  hover:bg-slate-900 hover:text-white transition'
                             onClick={() => setRoute("login")}
                         >
                             Login
                         </button>
                         <button 
-                            className='bg-gray-500 text-white border-gray-400 border-2 font-semibold py-2 px-4 rounded-md  hover:bg-gray-400 transition'
+                            className='bg-red-600 text-white border-2 font-semibold py-2 px-4 rounded-md  hover:bg-red-700 transition'
                             onClick={() => setRoute("register")}
                         >
                             Register

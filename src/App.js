@@ -29,7 +29,7 @@ function App() {
   const [user, setUser] = useState(null);
   return (
     <AppContext.Provider value={{ route, setRoute, user, setUser }} >
-    <div className='h-screen bg-gray-100'>
+    <div className='h-screen'>
       <Toaster />
       <Header />
       <main className='px-10 py-24'>

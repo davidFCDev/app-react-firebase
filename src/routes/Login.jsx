@@ -61,13 +61,25 @@ const Login = () => {
         <div className='flex flex-col gap-2 mt-10'>
             <div className='flex flex-col items-center gap-3'>
                 <h1 className='text-xl font-bold text-gray-800 mb-2'>Login</h1>
-                <p className='text-sm'>Logea tu usuario</p>
+                <p className='text-sm italic'>Access with your user!</p>
                 <form onSubmit={hazLoginConEmail} className='flex flex-col gap-2 max-w-xs'>
-                <input className='border bg-slate-100 border-gray-300 rounded py-1 px-2 outline-none' type='email' value={email} onChange={e => setEmail(e.target.value)} />
-                <input className='border bg-slate-100 border-gray-300 rounded py-1 px-2 outline-none' type='password' value={password} onChange={e => setPassword(e.target.value)} />
-                <button className='bg-emerald-200 py-1 text-gray-600 font-semibold hover: hover:bg-emerald-300 rounded shadow-slate-300 shadow-sm'>Enviar</button>
+                <input 
+                    className='border bg-zinc-100 border-gray-300 rounded py-1 px-2 outline-none'
+                    type='email'
+                    value={email}
+                    onChange={e => setEmail(e.target.value)} 
+                    placeholder='User'
+                    />
+                <input 
+                    className='border bg-zinc-100 border-gray-300 rounded py-1 px-2 outline-none'
+                    type='password'
+                    value={password}
+                    onChange={e => setPassword(e.target.value)} 
+                    placeholder='Password'
+                    />
+                <button className='bg-red-600 py-1 text-white font-semibold hover: hover:bg-red-700 rounded shadow-slate-300 shadow-sm'>Send</button>
                 <div className='flex items-center gap-2 cursor-pointer '>
-                    <button className='italic text-slate-700 hover:text-slate-400 transition' type='button' onClick={hazLoginGoogle}>...o haz login con Google</button>
+                    <button className='italic text-slate-700 hover:text-slate-400 transition' type='button' onClick={hazLoginGoogle}>...or login with Google</button>
                     <FcGoogle className=''/>
                 </div>
             </form>

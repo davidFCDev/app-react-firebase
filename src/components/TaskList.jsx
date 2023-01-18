@@ -52,37 +52,37 @@ export const TaskList = () => {
     
     return (
         <div>
-            <h1 className='text-2xl font-semibold text-emerald-800 ml-1'>Lista de Tareas</h1>
+            <h1 className='text-xl md:text-2xl font-semibold ml-1'>Task List</h1>
             <div className='flex flex-col gap-3'>
-                <h2 className='italic ml-1'>Introduce una nueva tarea</h2>
+                <h2 className='italic ml-1'>Add your new task </h2>
                 <input 
-                    className='border bg-slate-50 border-gray-200 rounded py-1 px-2 outline-none placeholder-slate-400 w-80' 
-                    placeholder='Título'
+                    className='border bg-slate-50 border-gray-200 rounded py-1 px-2 outline-none placeholder-slate-400 w-70 md:w-80' 
+                    placeholder='Title'
                     type='text' 
                     value={task.title}
                     onChange={e => setTask({...task, title: e.target.value})}
                 />
                 <textarea 
-                    className='border bg-slate-50 border-gray-200 rounded py-1 px-2 outline-none placeholder-slate-400 w-80'
+                    className='border bg-slate-50 border-gray-200 rounded py-1 px-2 outline-none placeholder-slate-400 w-70 md:w-80'
                     rows='3'
-                    placeholder='Descripción'
+                    placeholder='Description'
                     type='text' 
                     value={task.description}
                     onChange={e => setTask({...task, description: e.target.value})}
                 />
-                <button 
-                    className='bg-emerald-300 rounded-lg shadow py-1 text-gray-800 font-semibold hover:bg-emerald-200 w-80'
+                <button
+                    className='bg-red-600 text-white rounded-lg shadow py-1 text-gray-800 font-semibold hover:bg-red-700 w-70 md:w-80'
                     onClick={() => mode === 'add' ? createNewTask() : updateExistingTask()}
                     >
-                    {mode === 'add' ? 'Añadir' : 'Actualizar'}
+                    {mode === 'add' ? 'Add' : 'Update'}
                 </button>
                 <div className='grid grid-cols-1 md:grid-cols-3 gap-2 mt-4'>
                 {tasks.map((task) => (
                     <div 
                         key={task.id}
-                        className='rounded-lg border border-emerald-300 p-4 flex flex-col gap-2'>
+                        className='rounded-lg border border-slate-300 p-4 flex flex-col gap-2'>
                         <h1 className='font-semibold'>{task.title}</h1>
-                        <div className='border-t border-emerald-300'></div>
+                        <div className='border-t border-slate-300'></div>
                         <p>{task.description}</p>
                         <div className='flex justify-end gap-3'>
                             <button onClick={() => editTask(task.id)}><ImPencil2/></button>

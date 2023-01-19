@@ -35,8 +35,8 @@ const Register = () => {
     }   
 
     return (
-        <div className='flex flex-col gap-4 items-center mt-10'>
-            <h1 className='text-xl font-bold text-gray-800 text center'>Register</h1>
+        <div className='flex flex-col gap-4 items-center mt-10 px-10 py-24'>
+            <h1 className='text-xl font-bold text center'>Register</h1>
             <p className='text-sm italic'>Create a new user!</p>
             <form onSubmit={handleSubmit} className='flex flex-col gap-2 max-w-sm'>
                 <input 

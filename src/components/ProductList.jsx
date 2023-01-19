@@ -17,7 +17,7 @@ const ProductList = () => {
             {productList.length === 0 ? (
                 <p></p>
             ) : (
-                <div className="mt-10 grid grid-cols-1 sm:grid-cols-2  gap-4 sm:gap-3 md:grid-cols-4 lg:grid-cols-6" >
+                <div className="mt-10 grid grid-cols-1 sm:grid-cols-2  gap-4 sm:gap-6 md:grid-cols-4 lg:grid-cols-6" >
                 {productList.map(
                     (product, i) => (
                     <Product

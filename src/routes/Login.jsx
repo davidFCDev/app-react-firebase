@@ -58,9 +58,9 @@ const Login = () => {
     }
 
     return (
-        <div className='flex flex-col gap-2 mt-10'>
+        <div className='flex flex-col gap-2 mt-10 px-10 py-24'>
             <div className='flex flex-col items-center gap-3'>
-                <h1 className='text-xl font-bold text-gray-800 mb-2'>Login</h1>
+                <h1 className='text-xl font-bold mb-2'>Login</h1>
                 <p className='text-sm italic'>Access with your user!</p>
                 <form onSubmit={hazLoginConEmail} className='flex flex-col gap-2 max-w-xs'>
                 <input 

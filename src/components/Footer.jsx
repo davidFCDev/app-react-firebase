@@ -6,11 +6,11 @@ const Footer = () => {
     const { setRoute } = useContext(AppContext);
 
     return (
-        <footer className='fixed h-14 w-full bg-zinc-600 text-slate-900 bottom-0 flex justify-center gap-2 items-center'>
-        <div className='bg-white text-2xl hover:text-3xl p-2 rounded-full cursor-pointer' onClick={() => setRoute('home')}>
+        <footer className='fixed h-12 w-full bg-red-800 border-2 border-red00 text-slate-900 bottom-0 flex justify-center gap-2 items-center'>
+        <div className='bg-white text-xl hover:text-2xl p-2 rounded-full cursor-pointer' onClick={() => setRoute('home')}>
             <FaHome />
         </div>
-        <div className='bg-white text-2xl hover:text-3xl p-2 rounded-full cursor-pointer' onClick={() => setRoute('shopping')}>
+        <div className='bg-white text-xl hover:text-2xl p-2 rounded-full cursor-pointer' onClick={() => setRoute('shopping')}>
             <FaShoppingCart />
         </div>
         </footer>

@@ -52,7 +52,7 @@ export const TaskList = () => {
     
     return (
         <div>
-            <h1 className='text-xl md:text-2xl font-semibold ml-1'>Task List</h1>
+            <h1 className='text-xl md:text-2xl text-slate-700 font-semibold ml-1'>Task List</h1>
             <div className='flex flex-col gap-3'>
                 <h2 className='italic ml-1'>Add your new task </h2>
                 <input 

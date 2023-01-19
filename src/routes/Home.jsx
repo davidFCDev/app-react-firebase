@@ -38,7 +38,7 @@ const Home = () => {
                             Buy from anywhere
                             <FaShopify className='text-2xl text-red-700'/>
                         </h1>
-                        <p className='pt-6 text-sm md:text-xl'>Download our App and buy from anywhere. </p>
+                        <p className='pt-6 text-base md:text-xl'>Download our App and buy from anywhere. </p>
                         <p className='font-extralight italic pt-1 text-sm md:text-lg'>IOS, Android and web.</p>
                     </div>
                     <img 

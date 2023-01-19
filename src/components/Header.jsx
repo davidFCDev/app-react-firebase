@@ -39,12 +39,12 @@ const Header = () => {
                             >
                                 <RiUserFill className='md:text-2xl'/>
                             </button>
-                            <button 
+                            {/* <button 
                                 className='bg-zinc-200 text-slate-900 font-semibold px-2 md:py-2 md:px-4 hover:text-red-600 transition'
                                 onClick={() => setRoute('tasklist')}
                             >
                                 <BsListTask className='text-2xl'/>
-                            </button>
+                            </button> */}
                             <button 
                                 className='bg-zinc-200 text-slate-900 font-semibold px-2 md:py-2 md:px-4 hover:border hover:text-red-600 transition'
                                 onClick={hazLogout}

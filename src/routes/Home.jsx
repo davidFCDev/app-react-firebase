@@ -28,7 +28,7 @@ const Home = () => {
                     alt='' 
                     src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZTmRvAWLGcLhcHpVeeZDwXk8SlxbZYjAB7w&usqp=CAU' />
             </main>
-            <div className='grid grid-cols-1 md:grid-cols-4 gap-4 my-16 pb-20'>
+            <div className='grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-10 lg:gap-4 my-16 pb-20'>
                     <img 
                         className='w-auto h-auto md:w-80 md:h-50 rounded-3xl shadow-lg shadow-zinc-200 hover:shadow-zinc-400' 
                         alt='' 

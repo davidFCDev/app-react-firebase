@@ -33,13 +33,13 @@ const Header = () => {
                         user 
                         ? 
                         <div className='flex gap-1 md:gap-3 w-12 justify-end'>
-                            <img alt='' src={user.photoURL} className='rounded-full w-10 h-10'></img>
+                            <img alt='' src={user.photoURL} className='rounded-full w-7 h-7 md:w-10 md:h-10'></img>
                             <div className='flex'>
                                 <button 
                                     className='bg-zinc-100 text-slate-900 font-semibold px-2 md:py-2 md:px-4 hover:text-red-600 transition'
                                     onClick={() => setRoute('perfil')}
                                 >
-                                    <RiUserFill className='md:text-2xl'/>
+                                    <RiUserFill className='text-xl md:text-2xl'/>
                                 </button>
                                 <button 
                                     className='bg-zinc-100 text-slate-900 font-semibold px-2 md:py-2 md:px-4 hover:text-red-600 transition'

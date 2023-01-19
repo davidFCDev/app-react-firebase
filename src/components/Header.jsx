@@ -23,7 +23,7 @@ const Header = () => {
     }
     
     return (
-            <header className='h-16 w-full bg-zinc-100 shadow-lg shadow-zinc-200 flex items-center justify-between px-4 md:px-8 fixed top-0'>
+            <header className='h-16 w-full bg-zinc-100 shadow-md shadow-zinc-400 flex items-center justify-between px-4 md:px-8 fixed top-0'>
                 <div className='flex items-center gap-1 md:gap-2 cursor-pointer' onClick={() => setRoute("home")}>
                     <GiFire className='text-xl md:text-3xl text-red-600'/>
                     <p className='text-xl md:text-2xl font-bold text-red-600'>Fire<span className='text-black'>Shopping</span></p>

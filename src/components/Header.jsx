@@ -1,10 +1,10 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext } from 'react';
 import { GiFire } from 'react-icons/gi';
 import { AppContext } from '../App';
 import { getAuth, signOut } from "firebase/auth";
 import { toast } from 'react-hot-toast';
 import { RiLogoutCircleRLine, RiUserFill } from 'react-icons/ri';
-import { BsListTask } from 'react-icons/bs';
+
 
 const auth = getAuth();
 
@@ -33,7 +33,6 @@ const Header = () => {
                         user 
                         ? 
                         <div className='flex gap-1 md:gap-3 w-12 justify-end'>
-                            <img alt='' src={user.photoURL} className='rounded-full w-7 h-7 md:w-10 md:h-10'></img>
                             <div className='flex'>
                                 <button 
                                     className='bg-zinc-100 text-slate-900 font-semibold px-2 md:py-2 md:px-4 hover:text-red-600 transition'

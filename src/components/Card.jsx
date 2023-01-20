@@ -9,8 +9,8 @@ export const OutlinedCard = () => {
     const {  user } = React.useContext(AppContext);
     return (
         <Box >
-                <Card className='max-w-lg flex justify-evenly py-10' variant="outlined">
-                    <div className='max-w-xs md:max-w-sm'>
+                <Card className='max-w-lg flex justify-evenly py-10 md:px-3' variant="outlined">
+                    <div className='max-w-xs md:max-w-sm px-10 sm:px-2'>
                         <CardContent>
                             <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
                                 Profile User
@@ -36,7 +36,7 @@ export const OutlinedCard = () => {
                             </Typography>
                         </CardContent>
                     </div>
-                        <img alt='img' src={user.photoURL} className='opacity-0 sm:opacity-100 w-14 h-14 my-3 mx-3 md:w-20 md:h-20 md:my-6 md:mx-6 rounded-full border border-slate-300'></img>
+                        <img alt='img' src={user.photoURL} className='opacity-0 sm:opacity-100 w-14 h-14 my-3 mx-3 sm:w-20 sm:h-20 md:my-6 md:mx-6 rounded-full border border-slate-300'></img>
                 </Card>
         </Box>
     )

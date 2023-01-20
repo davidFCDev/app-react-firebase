@@ -4,8 +4,6 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import { AppContext } from '../App';
-import ImageAvatars from './Avatar';
-
 
 export const OutlinedCard = () => {
     const {  user } = React.useContext(AppContext);
@@ -18,27 +16,27 @@ export const OutlinedCard = () => {
                             Profile User
                         </Typography>
                         <Typography component="div">
-                            <p className='text-2xl py-1 font-semibold'>
+                            <span className='text-2xl py-1 font-semibold'>
                                 {user.displayName}  
-                            </p>
+                            </span>
                         </Typography>
                         <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                            <p className='italic font-light text-sm te'>
+                            <span className='italic font-light text-sm te'>
                                 {user.email}  
-                            </p>  
+                            </span>  
                         </Typography>
                         <Typography variant="body2">
-                        <p className='py-4'>
-                            your shopping list is empty,
-                            <br />
-                            do your first purchase!
-                        </p>
+                            <span className='py-4 text-red-800'>
+                                your shopping list is empty,
+                            </span>
+                            <br></br>
+                            <span>
+                                do your first purchase!
+                            </span>
                         </Typography>
                         </CardContent>
                     </div>
-                    <div className='py-10 px-7'>
-                        <ImageAvatars />
-                    </div>
+                        <img alt='img' src={user.photoURL} className='w-20 h-20 my-6 mx-6 rounded-full border border-slate-300'></img>
                 </Card>
         </Box>
     )

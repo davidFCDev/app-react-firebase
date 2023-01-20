@@ -4,6 +4,8 @@ import { AppContext } from '../App';
 import { getAuth, signOut } from "firebase/auth";
 import { toast } from 'react-hot-toast';
 import { RiLogoutCircleRLine, RiUserFill } from 'react-icons/ri';
+import { ImageAvatarIcon } from './Avatar';
+
 
 
 const auth = getAuth();
@@ -28,12 +30,13 @@ const Header = () => {
                     <GiFire className='text-xl md:text-3xl text-red-600'/>
                     <p className='text-xl md:text-2xl font-bold text-red-600'>Fire<span className='text-black'>Shopping</span></p>
                 </div>
-                <div className='flex gap-1 md:gap-2'>
+                <div className='flex gap-1 md:gap-2 '>
                     {
                         user 
                         ? 
-                        <div className='flex gap-1 md:gap-3 w-12 justify-end'>
-                            <div className='flex'>
+                        <div className='flex gap-1 md:gap-3'>
+                                <div className='opacity-100 sm:opacity-0'>
+                                </div>
                                 <button 
                                     className='bg-zinc-100 text-slate-900 font-semibold px-2 md:py-2 md:px-4 hover:text-red-600 transition'
                                     onClick={() => setRoute('perfil')}
@@ -46,7 +49,6 @@ const Header = () => {
                                     >
                                     <RiLogoutCircleRLine className='text-2xl'/>
                                 </button>
-                            </div>
                         </div> 
                         : 
                         (

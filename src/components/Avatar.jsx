@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Avatar from '@mui/material/Avatar';
 
-export default function ImageAvatars() {
+export const ImageAvatars = () => {
 
     const random = Math.floor(Math.random() * 101);
 

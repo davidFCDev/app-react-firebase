@@ -4,7 +4,6 @@ import { AppContext } from '../App';
 import { getAuth, signOut } from "firebase/auth";
 import { toast } from 'react-hot-toast';
 import { RiLogoutCircleRLine, RiUserFill } from 'react-icons/ri';
-import { ImageAvatarIcon } from './Avatar';
 
 
 

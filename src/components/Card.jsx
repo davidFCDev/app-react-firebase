@@ -10,7 +10,7 @@ export const OutlinedCard = () => {
     return (
         <Box >
                 <Card className='max-w-lg flex' variant="outlined">
-                    <div className='text'>
+                    <div className='max-w-xs md:max-w-sm'>
                         <CardContent>
                         <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
                             Profile User
@@ -36,7 +36,7 @@ export const OutlinedCard = () => {
                         </Typography>
                         </CardContent>
                     </div>
-                        <img alt='img' src={user.photoURL} className='w-20 h-20 my-6 mx-6 rounded-full border border-slate-300'></img>
+                        <img alt='img' src={user.photoURL} className='opacity-0 sm:opacity-100 w-14 h-14 my-3 mx-3 md:w-20 md:h-20 md:my-6 md:mx-6 rounded-full border border-slate-300'></img>
                 </Card>
         </Box>
     )

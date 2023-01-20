@@ -1,7 +1,3 @@
-
-
-![Image text](https://github.com/davidFCDev/app-react-firebase/blob/main/src/assets/imagen-proyecto-3.png)
-
 ## Descripción
 
 Web eCommerce creada con ReactJS y Tailwind css

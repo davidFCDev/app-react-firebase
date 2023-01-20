@@ -1,5 +1,5 @@
 import { app, messaging } from './firebase'
-import React, { createContext, useContext, useEffect, useState } from 'react';
+import React, { createContext, useState } from 'react';
 import Header from './components/Header';
 import Home from './routes/Home';
 import Login from './routes/Login';
@@ -41,7 +41,7 @@ function App() {
             {route === "perfil" && <Perfil />}
           </main> 
           <Footer>
-          
+
           </Footer>
         </div>
       </AppContext.Provider>

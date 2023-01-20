@@ -5,7 +5,7 @@ import { OutlinedCard } from '../components/Card';
 const Perfil = () => {
 
     return (
-        <div className='mt-24 mx-10'>
+        <div className='mt-32 mx-10 max-w-lg shadow-md shadow-slate-300'>
             <OutlinedCard/>
         </div>
     );

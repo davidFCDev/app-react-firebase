@@ -7,7 +7,7 @@ Web eCommerce creada con ReactJS y Tailwind css
 **David Fernández**
 
 * [LinkedIn](www.linkedin.com/in/david-fernandez-comesaña)
-* [Portfolio web](https://github.com/davidFCDev/virtual-folio)
+* [Portfolio web](https://personal-virtualfolio.netlify.app/)
 
 ## Ver ejemplo en vivo
 
